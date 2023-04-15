@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; font-family: monospace">
+      The Weather Tracker
+    </h1>
+
+    <br />
+
+    <div class="body-grid">
+      <div class="locationWrapper">
+        <form id="locationForm">
+          <p>Enter Location Name:</p>
+          <input
+            type="text"
+            id="locationInput"
+            placeholder="e.g Salt Lake City"
+          />
+          <input type="submit" id="formSubmit" value="Search" />
+        </form>
+      </div>
+      <br />
+      <div class="weatherInformation">
+        <h2 id="weatherHeader">Location Name</h2>
+      </div>
+    </div>
+
+    <br />
+
+    <p class="currentTime" style="font-family: monospace"></p>
+    <script src="index.js"></script>
+  </body>
+</html>

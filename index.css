@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+body{
+    /*background-image: url(weather.jpg);
+    font-family: 'Alkatra', cursive;
+    background-repeat: no-repeat;
+    background-size: 100%;*/
+    font-size: larger;
+    font-family:monospace;
+}
+
+.currentTime{
+    text-align:center;
+}
+
+.body-grid{
+    display: grid;
+    grid-template-columns: repeat(1,.5fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.locationWrapper{
+    text-align: center;
+    background-color:  rgb(199, 199, 199);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#locationForm > #locationInput{
+    border-radius: 50px;
+    padding: 4px;
+    border: 1px solid black;
+}
+
+input[type="text"]{
+    font-family:'Courier New', Courier, monospace;
+}
+
+#locationInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: monospace;
+    opacity: 1; /* Firefox */
+  }
+  
+#locationInput::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: monospace;
+  }
+  
+#locationInput::-ms-input-placeholder { /* Microsoft Edge */
+    font-family:monospace;
+  }
+
+#locationForm > #formSubmit{
+    border-radius: 50px;
+    padding:5px;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#formSubmit:hover{
+    cursor: pointer;
+    color:blueviolet;
+}
+
+.weatherInformation{
+    text-align: center;
+    background-color: rgb(199, 199, 199);
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: monospace;
+}
+
+.weatherInformation > h2{
+    text-align: center;
+    background-color: rgb(100, 99, 99);
+    margin-top: -10px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 9px;
+    color: white;
+}
