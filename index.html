@@ -8,15 +8,33 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="locationWrapper">
-      <form id="locationForm">
-        <p>Enter City Name:</p>
-        <input type="text" id="locationInput" placeholder="e.g Los Angeles" />
-        <input type="submit" id="formSubmit" />
-      </form>
+    <h1 style="text-align: center; font-family: monospace">
+      The Weather Tracker
+    </h1>
+
+    <br />
+
+    <div class="body-grid">
+      <div class="locationWrapper">
+        <form id="locationForm">
+          <p>Enter Location Name:</p>
+          <input
+            type="text"
+            id="locationInput"
+            placeholder="e.g Salt Lake City"
+          />
+          <input type="submit" id="formSubmit" value="Search" />
+        </form>
+      </div>
       <br />
-      <div class="weatherInformation"></div>
+      <div class="weatherInformation">
+        <h2 id="weatherHeader">Location Name</h2>
+      </div>
     </div>
+
+    <br />
+
+    <p class="currentTime" style="font-family: monospace"></p>
     <script src="index.js"></script>
   </body>
 </html>
