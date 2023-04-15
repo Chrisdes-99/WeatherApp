@@ -2,12 +2,10 @@
 
 body{
     font-family: 'Alkatra', cursive;
-    font-size: larger;
 }
 
 .locationWrapper{
     text-align: center;
-    font-weight: bold;
 }
 
 #locationForm > #locationInput{
@@ -41,4 +39,24 @@ body{
 #formSubmit:hover{
     cursor: pointer;
     color:blueviolet;
+}
+
+.weatherInformation{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(199, 199, 199);
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.weatherInformation > h2{
+    text-align: center;
+    background-color: rgb(100, 99, 99);
+    margin-top: -10px;
+    border-radius: 9px;
+    color: white;
 }
