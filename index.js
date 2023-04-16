@@ -11,7 +11,7 @@ locationButton.addEventListener('click', e =>{
 
 async function getWeather(){
     const locationName = document.getElementById("locationInput").value;
-    const response = await fetch("http://api.weatherapi.com/v1/current.json?key= f2b1547cc854421da5e111905231504&q="+locationName+"&aqi=no");
+    const response = await fetch("https://api.weatherapi.com/v1/current.json?key= f2b1547cc854421da5e111905231504&q="+locationName+"&aqi=no");
     const data = await response.json();
     console.log(data);
     displayWeatherInfo(data);
