@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800;900&display=swap');
 
 body{
-    /*background-image: url(weather.jpg);
-    font-family: 'Alkatra', cursive;
+    
+    /*font-family: 'Alkatra', cursive;*/
+    background-image: url(marek-piwnicki-lxoecryHUCI-unsplash.jpg);
+    background-size: cover;
+    /*background-size: 1440px 1000px;*/
     background-repeat: no-repeat;
-    background-size: 100%;*/
     font-size: larger;
-    font-family:monospace;
+    font-family: 'Phudu', cursive;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navBar{
+    padding: 15px;
+}
+
+.navBar > h1{
+    text-align: center;
+    color: black;
 }
 
 .currentTime{
@@ -22,63 +36,69 @@ body{
 
 .locationWrapper{
     text-align: center;
-    background-color:  rgb(199, 199, 199);
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    color: white;
 }
 
 #locationForm > #locationInput{
-    border-radius: 50px;
+    border-radius: 0px;
     padding: 4px;
     border: 1px solid black;
 }
 
 input[type="text"]{
-    font-family:'Courier New', Courier, monospace;
+    font-size:15px
 }
 
-#locationInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-family: monospace;
-    opacity: 1; /* Firefox */
-  }
-  
-#locationInput::-ms-input-placeholder { /* Internet Explorer 10-11 */
-    font-family: monospace;
-  }
-  
-#locationInput::-ms-input-placeholder { /* Microsoft Edge */
-    font-family:monospace;
-  }
-
 #locationForm > #formSubmit{
-    border-radius: 50px;
+    border-radius: 5px;
     padding:5px;
     border: 1px solid black;
     background-color: white;
     font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #formSubmit:hover{
     cursor: pointer;
-    color:blueviolet;
+    color:gray;
+}
+
+.weatherBoard{
+    margin-top: 20px;
 }
 
 .weatherInformation{
     text-align: center;
-    background-color: rgb(199, 199, 199);
+    background-color: white;
+    opacity: .7;
+    color: black;
     padding: 10px 0px 10px 0px;
-    border-radius: 10px;
-    border: 1px solid black;
-    font-family: monospace;
+    border-radius: 11px;
+    position: relative;
 }
 
 .weatherInformation > h2{
     text-align: center;
-    background-color: rgb(100, 99, 99);
-    margin-top: -10px;
+    /*background-color: rgb(100, 99, 99);*/
     padding: 5px 0px 5px 0px;
     border-radius: 9px;
-    color: white;
+}
+
+.currentTime{
+    color: black;
+}
+
+.footer{
+    text-align: center;
+    background-color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: .6;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
