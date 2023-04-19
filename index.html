@@ -5,36 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="icons8-rain-cloud-96.png" />
     <title>Weather App</title>
   </head>
   <body>
-    <h1 style="text-align: center; font-family: monospace">
-      The Weather Tracker
-    </h1>
+    <div class="navBar">
+      <h1>Weather Tracker</h1>
+    </div>
 
-    <br />
+    <!--<h1 style="text-align: center; font-family: monospace">Weather Tracker</h1>-->
 
     <div class="body-grid">
       <div class="locationWrapper">
         <form id="locationForm">
-          <p>Enter Location Name:</p>
-          <input
-            type="text"
-            id="locationInput"
-            placeholder="e.g Salt Lake City"
-          />
+          <p style="color: black">Enter Location Name:</p>
+          <input type="text" id="locationInput" />
           <input type="submit" id="formSubmit" value="Search" />
         </form>
       </div>
-      <br />
-      <div class="weatherInformation">
-        <h2 id="weatherHeader">Location Name</h2>
-      </div>
+
+      <div class="weatherBoard"></div>
     </div>
 
     <br />
 
-    <p class="currentTime" style="font-family: monospace"></p>
+    <div class="footer">
+      <h4 class="currentTime"></h4>
+      <p>
+        <span style="font-weight: bold">Made By</span>: Christopher De Santiago
+      </p>
+      <p><span style="font-weight: bold">Weather Data</span>: WeatherAPI.com</p>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
