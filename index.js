@@ -23,6 +23,7 @@ async function getWeather(){
 
     console.log(data);
     displayWeatherInfo(data);
+    changeBackground();
 
     }catch(error){
         console.error(error);
@@ -70,6 +71,11 @@ function showTime(){
     var time = dateString.replace(", ", " - ");
 
     timeDiv.innerText = time;
+}
+
+function changeBackground(){
+    const footer = document.querySelector(".footer");
+    footer.style.color = "white";
 }
 
 setInterval(showTime,1000);

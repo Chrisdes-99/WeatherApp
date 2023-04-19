@@ -85,19 +85,14 @@ input[type="text"]{
     border-radius: 9px;
 }
 
-.currentTime{
-    color: black;
-}
-
 .footer{
     text-align: center;
-    background-color: white;
+    color: black;
     display: block;
     justify-content: center;
     align-items: center;
     padding: 10px;
     border-radius: 5px;
-    opacity: .6;
     width: 50%;
     margin: 0 auto;
     margin-bottom: 20px;
