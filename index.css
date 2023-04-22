@@ -65,7 +65,7 @@ input[type="text"]{
 }
 
 .weatherBoard{
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .weatherInformation{
@@ -75,7 +75,6 @@ input[type="text"]{
     color: black;
     padding: 10px 0px 10px 0px;
     border-radius: 11px;
-    position: relative;
 }
 
 .weatherInformation > h2{
@@ -83,6 +82,21 @@ input[type="text"]{
     /*background-color: rgb(100, 99, 99);*/
     padding: 5px 0px 5px 0px;
     border-radius: 9px;
+}
+
+.forecastTable{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    margin: 0px 20px 0px 20px;
+}
+
+.forecastColumn1{
+    font-weight:bold;
+    border-right: 1px solid 
+}
+
+.forecastColumn2{
+    margin-top: 25px;
 }
 
 .footer{
