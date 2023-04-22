@@ -18,7 +18,7 @@ async function getWeather(){
     const locationName = document.getElementById("locationInput").value;
 
     try{
-    const response = await fetch("http://api.weatherapi.com/v1/forecast.json?key=f2b1547cc854421da5e111905231504&q="+locationName+"&days=1&aqi=no&alerts=no");
+    const response = await fetch("https://api.weatherapi.com/v1/forecast.json?key=f2b1547cc854421da5e111905231504&q="+locationName+"&days=1&aqi=no&alerts=no");
     const data = await response.json();
 
     console.log(data);
